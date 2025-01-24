@@ -1,0 +1,975 @@
+/* Barra de navegación */
+
+/* Estilos de la barra de navegación */
+.navbar {
+  padding: 2rem;
+  background-color: #f7f8f9;
+}
+
+/* Mejora de la apariencia de la navbar en dispositivos pequeños */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+    /* Reduce el padding en pantallas más pequeñas */
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+    /* Alinea mejor los elementos en pantallas pequeñas */
+  }
+}
+
+/* Fin barra de navegación */
+
+/* Sobre mí */
+
+.seccion-oscura {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 1.6;
+  overflow: visible;
+  /* Asegúrate de que el contenido adicional sea visible */
+  white-space: normal;
+  /* Permite que el texto se envuelva adecuadamente */
+}
+
+.terminal {
+  font-size: 1.5rem;
+  background-color: #1b1b32;
+  padding: 20px;
+  width: 100%;
+  /* Ajuste para mayor responsividad */
+  max-width: 800px;
+  height: auto;
+  color: limegreen;
+  margin: 0 auto;
+  /* Centrar la terminal */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.prompt {
+  color: limegreen;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: limegreen;
+  width: 10px;
+  height: 24px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  .seccion-texto {
+    font-size: 0.9rem;
+    /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    margin-top: 10px;
+    /* Reduce el margen superior */
+    max-height: none;
+}
+
+  .terminal {
+    font-size: 1rem;
+    /* Tamaño de fuente más pequeño para la terminal */
+  }
+}
+
+/* Estilo para el contenedor */
+.contenedor {
+  width: 90%;
+  /* O ajusta según sea necesario */
+  max-width: 800px;
+  /* Para limitar el tamaño en pantallas más grandes */
+  margin: 0 auto;
+  /* Para centrar el contenedor */
+}
+
+/* Fin Sobre mí */
+
+/* A qué me dedico */
+
+#more-features {
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  /* Ajuste para mayor espaciado */
+  text-align: center;
+  overflow: hidden;
+}
+
+#more-features .row-title {
+  color: #6c84af;
+  font-size: 28px;
+  /* Tamaño de fuente un poco más grande */
+  font-weight: bold;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
+}
+
+#more-features .mfeature-box {
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* Añade un borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Añade una sombra suave */
+  transition: transform 0.3s ease-in-out;
+  /* Añade una transición para animaciones */
+}
+
+#more-features .mfeature-box:hover {
+  transform: translateY(-10px);
+  /* Eleva la caja al hacer hover */
+}
+
+#more-features .mfeature-icon .icon-img img {
+  width: 80px;
+  /* Ajuste de tamaño para mejor consistencia */
+  transition: transform 0.3s ease;
+  /* Transición suave al hacer hover */
+}
+
+#more-features .mfeature-box:hover .icon-img img {
+  transform: scale(1.1);
+  /* Agranda un poco la imagen al hacer hover */
+}
+
+#more-features .mfeature-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #34a8ff;
+  margin-bottom: 10px;
+}
+
+#more-features .mfeature-details {
+  font-size: 15px;
+  color: #678ea6;
+}
+
+.row-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #6c84af;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.row-title .title-container {
+  display: inline-block;
+  /* Permite que el bloque azul y el texto estén en la misma línea */
+  position: relative;
+}
+
+.row-title::after {
+  content: '';
+  width: 100px;
+  /* Línea más larga */
+  height: 2px;
+  background-color: #d1d1d1;
+  /* Color gris claro */
+  display: block;
+  margin: 10px auto 0 auto;
+  /* Centrado debajo del texto */
+  position: relative;
+}
+
+.row-title .blue-block {
+  width: 40px;
+  /* Tamaño del bloque azul */
+  height: 6px;
+  /* Grosor del bloque azul */
+  background-color: #007bff;
+  /* Color azul */
+  display: inline-block;
+  /* Permite que el bloque azul esté en la misma línea */
+  margin-left: 10px;
+  /* Espacio entre el texto y el bloque azul */
+  vertical-align: middle;
+  /* Alinear verticalmente con el texto */
+}
+
+/* Fin a qué me dedico */
+
+/* Mis badges */
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+icon-bg {
+
+  margin-bottom: 20px;
+}
+
+.row-title {
+  color: #6c84af;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Fin mis badges */
+
+/* Mis skill */
+
+.misskill {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* Permite que las columnas se ajusten si el espacio es pequeño */
+  width: 90%;
+  margin: auto;
+  align-items: flex-start;
+  gap: 20px;
+  /* Añade un espacio entre las tarjetas de habilidades */
+}
+
+.skill {
+  width: 45%;
+  /* Mantiene el ancho de cada skill */
+  margin: 0;
+  /* Remueve el margen lateral */
+  display: flex;
+  flex-direction: column;
+}
+
+.skill p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.skill .progress {
+  background-color: #e0e0e0;
+  /* Color de fondo más claro */
+  border-radius: 5px;
+  height: 25px;
+  /* Ajuste de altura para mayor visibilidad */
+  margin-bottom: 15px;
+  /* Más espacio entre las barras de progreso */
+}
+
+.progress-bar {
+  background-color: #34a8ff;
+  /* Color principal de la barra de progreso */
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  color: white;
+  font-weight: bold;
+  transition: width 0.4s ease-in-out;
+  /* Animación suave al cambiar el tamaño */
+}
+
+.progress-bar::after {
+  content: attr(aria-label);
+  /* Muestra el nivel dentro de la barra */
+  padding-left: 10px;
+  color: #fff;
+}
+
+.tituloskill {
+  color: #6c84af;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.row-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4a5568;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.row-title::after {
+  content: '';
+  width: 60px;
+  /* Ancho total de la línea */
+  height: 2px;
+  background-color: #c0c0c0;
+  /* Color de la línea gris */
+  display: block;
+  margin: 10px auto;
+  /* Centrado debajo del texto */
+  position: relative;
+}
+
+.row-title::before {
+  content: '';
+  width: 30px;
+  /* Tamaño del bloque azul en el centro */
+  height: 4px;
+  /* Grosor del bloque azul */
+  background-color: #007bff;
+  /* Color azul */
+  display: block;
+  margin: 0 auto;
+  /* Centrado */
+  position: absolute;
+  bottom: -6px;
+  /* Ajuste vertical para superponerse a la línea gris */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Fin mis skill */
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  font-weight: 400;
+  font-weight: 400;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 0.2s ease;
+  border: 1px #adb5bd solid;
+  margin: 20px;
+}
+
+.seccion-titulo,
+.seccion-descripcion {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+  margin: 0 15px;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+.tituloproyectos {
+  color: #6c84af;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.row-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #6c84af;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.row-title::after {
+  content: '';
+  width: 60px;
+  /* Ancho total de la línea */
+  height: 2px;
+  background-color: #c0c0c0;
+  /* Color de la línea gris */
+  display: block;
+  margin: 10px auto;
+  /* Centrado debajo del texto */
+  position: relative;
+}
+
+.row-title::before {
+  content: '';
+  width: 30px;
+  /* Tamaño del bloque azul en el centro */
+  height: 4px;
+  /* Grosor del bloque azul */
+  background-color: #007bff;
+  /* Color azul */
+  display: block;
+  margin: 0 auto;
+  /* Centrado */
+  position: absolute;
+  bottom: -6px;
+  /* Ajuste vertical para superponerse a la línea gris */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Fin mis proyectos */
+
+/* Testimonios */
+
+.testimonios {
+  padding: 10px 40px 80px 40px;
+  text-align: center;
+}
+
+/* Carrusel centrado horizontalmente */
+.testimonios .carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Asegurar que solo el item activo se muestre */
+.carousel-item {
+  display: none;
+  /* Todos los elementos inicialmente ocultos */
+  min-height: 500px;
+  /* Mantiene una altura mínima */
+  height: auto;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item.active {
+  display: flex;
+  /* Solo el item activo se muestra con flex */
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen del testimonio */
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 20px 0;
+}
+
+/* Texto del testimonio */
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .testimonio-texto {
+    max-width: 50%;
+  }
+}
+
+/* Información del testimonio */
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 1rem;
+  color: black;
+}
+
+/* Botones del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(50%);
+}
+
+.row-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #6c84af;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.row-title .title-container {
+  display: inline-block;
+  /* Permite que el bloque azul y el texto estén en la misma línea */
+  position: relative;
+}
+
+.row-title::after {
+  content: '';
+  width: 100px;
+  /* Línea más larga */
+  height: 2px;
+  background-color: #d1d1d1;
+  /* Color gris claro */
+  display: block;
+  margin: 10px auto 0 auto;
+  /* Centrado debajo del texto */
+  position: relative;
+}
+
+.row-title .blue-block {
+  width: 40px;
+  /* Tamaño del bloque azul */
+  height: 6px;
+  /* Grosor del bloque azul */
+  background-color: #007bff;
+  /* Color azul */
+  display: inline-block;
+  /* Permite que el bloque azul esté en la misma línea */
+  margin-left: 10px;
+  /* Espacio entre el texto y el bloque azul */
+  vertical-align: middle;
+  /* Alinear verticalmente con el texto */
+}
+
+/* Fin testimonios */
+
+/* Formulario de contacto */
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #0563bb;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eef7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #45505b;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #0563bb;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #0d534e;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #0d534e;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Modal */
+
+/* El modal está oculto por defecto */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo oscuro con opacidad */
+  transition: opacity 0.3s ease;
+}
+
+/* Contenedor del contenido del modal */
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 15% auto;
+  /* Centrado vertical */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.5s ease-in-out;
+  /* Animación para que aparezca suavemente */
+}
+
+/* Estilos para el botón de cerrar (la "X") */
+.close {
+  color: #333;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff3b3b;
+  /* Cambia de color al pasar el ratón */
+}
+
+/* Texto del mensaje */
+.modal-content p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fin modal */
+
+/* Fin formulario de contacto */
+
+/* Footer */
+
+#footer {
+  background: #f7f8f9;
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+#footer p {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+#footer .social-links {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  /* Centrar los íconos horizontalmente */
+  gap: 10px;
+  /* Espacio entre los íconos */
+}
+
+/* Estilo de los iconos sociales */
+#footer .social-links a {
+  font-size: 18px;
+  display: flex;
+  /* flex para centrar el contenido */
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+  background: #0d534e;
+  color: #fff;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: all 0.3s ease-in-out;
+  /* Transición suave */
+  text-decoration: none;
+  /* Eliminar subrayado */
+}
+
+#footer .social-links a:hover {
+  background: #09736a;
+  /* Cambio de color en hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra */
+  text-decoration: none;
+  /* Asegurar que el subrayado no reaparezca en hover */
+}
+
+#footer .copyright {
+  margin-bottom: 15px;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+  #footer h3 {
+    font-size: 28px;
+  }
+
+  #footer .social-links a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 6px 0;
+  }
+}
+
+/* Fin footer */
+
+/* Scroll top button */
+
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0d534e;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  /* Tamaño fijo para ancho */
+  height: 50px;
+  /* Tamaño fijo para alto */
+  display: none;
+  /* Oculto inicialmente */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  /* flexbox para centrar */
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+  text-decoration: none;
+}
+
+.scroll-up i {
+  font-size: 24px;
+  /* Tamaño del icono */
+  margin: 0;
+  /* Asegurar que no haya margen */
+  padding: 0;
+  /* Asegurar que no haya padding */
+  line-height: 1;
+  /* Ajustar line-height para centrar mejor */
+  text-decoration: none;
+  /* Asegurar que el icono no tenga subrayado */
+}
+
+.scroll-up:hover {
+  background-color: #555;
+  /* Color de fondo al pasar el ratón */
+}
+
+.scroll-up.show {
+  display: flex;
+  /* Mostrar como flex para centrar */
+}
+
+/* Fin scroll top button */
